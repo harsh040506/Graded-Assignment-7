@@ -1,9 +1,9 @@
 ---
 marp: true
 title: Product Documentation Presentation
-# This fulfills the email requirement
+# Fulfills the email requirement
 author: 24f3004403@ds.study.iitm.ac.in
-# This fulfills the page numbers requirement
+# Fulfills the page numbers requirement
 paginate: true
 theme: gaia
 ---
@@ -23,11 +23,8 @@ theme: gaia
   }
 </style>
 
-<!-- 
-  This is the Title Slide.
-  The "_class" directive applies our custom CSS class. 
--->
 <!-- _class: lead-slide -->
+<!-- This slide uses a custom CSS class defined above -->
 
 # Our New Product API
 ### A Guide for Developers
@@ -44,11 +41,7 @@ theme: gaia
 
 ---
 
-<!-- 
-  This slide fulfills the background image requirement.
-  It uses a relative path to the image you saved in Step 3.
--->
-
+<!-- This slide fulfills the background image requirement -->
 ![bg fit](images/background.jpg)
 
 ## Key Features Overview
@@ -59,10 +52,7 @@ theme: gaia
 
 ---
 
-<!-- 
-  This slide fulfills the custom styling with directives requirement.
-  It sets a custom background and text color just for this slide.
--->
+<!-- This slide fulfills the custom styling with directives requirement -->
 <!-- _backgroundColor: #282c34 -->
 <!-- _color: #ffffff -->
 
@@ -78,3 +68,29 @@ def get_user_data(api_key, user_id):
     headers = {"Authorization": f"Bearer {api_key}"}
     response = requests.get(url, headers=headers)
     return response.json()
+
+# Algorithmic Complexity
+
+Our API performance is highly optimized. The core search algorithm has a time complexity of:
+
+**Inline Equation:**
+
+```
+O(log n)
+```
+
+The data aggregation process has a block equation complexity:
+
+```
+T(n) = 2T(n/2) + O(n)
+```
+
+This ensures fast and efficient data retrieval even with large datasets.
+
+## Thank You
+
+**Questions?**
+
+Contact: 24f3004403@ds.study.iitm.ac.in
+
+
